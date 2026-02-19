@@ -114,15 +114,44 @@
 }
 
 @media (max-width: 900px) {
+    .benefits {
+        padding: 4rem 0;
+    }
+
     .container {
         flex-direction: column;
+        text-align: center;
+        gap: 3rem;
     }
 
     .visual {
         width: 100%;
+        order: 2;
+    }
+
+    .content {
+        order: 1;
     }
 
     .imagePlaceholder {
         height: 300px;
+    }
+
+    .list li {
+        text-align: left;
+    }
+
+    .chips {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
     }
 }

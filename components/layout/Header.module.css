@@ -59,9 +59,95 @@
     box-shadow: 0 4px 12px rgba(243, 214, 67, 0.4);
 }
 
+.mobileToggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+}
+
+.mobileToggle span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary-blue);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.mobileToggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobileToggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobileToggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.mobileCta {
+    display: none;
+}
+
 @media (max-width: 900px) {
-    .nav {
+    .header {
+        padding: 0.75rem 0;
+    }
+
+    .ctaButton {
         display: none;
-        /* Mobile menu needed later */
+    }
+
+    .mobileToggle {
+        display: flex;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 80px 2rem 2rem;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        display: flex;
+        /* Override display: none from previous version if it was there */
+    }
+
+    .navOpen {
+        right: 0;
+    }
+
+    .navList {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .navList a {
+        font-size: 1.25rem;
+        display: block;
+    }
+
+    .mobileCta {
+        display: block;
+        background-color: var(--color-primary-yellow);
+        color: var(--color-primary-blue);
+        padding: 14px;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: auto;
     }
 }

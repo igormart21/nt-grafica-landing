@@ -240,6 +240,10 @@
 }
 
 @media (max-width: 900px) {
+    .hero {
+        padding: 4rem 0 6rem;
+    }
+
     .headline {
         font-size: 2.5rem;
     }
@@ -247,7 +251,8 @@
     .container {
         flex-direction: column;
         text-align: center;
-        padding-top: 2rem;
+        padding-top: 1rem;
+        gap: 2rem;
     }
 
     .badge {
@@ -258,19 +263,45 @@
     .subtitle {
         margin-left: auto;
         margin-right: auto;
+        font-size: 1rem;
     }
 
     .ctaGroup {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .primaryBtn,
+    .secondaryBtn {
+        width: 100%;
         justify-content: center;
     }
 
     .stats {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 1rem 2rem;
     }
 
     .visual {
         display: none;
-        /* Hide complex visual on mobile for speed/simplicity or replace with static image */
+    }
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 3rem 0 5rem;
+    }
+
+    .statItem {
+        font-size: 0.8rem;
     }
 }

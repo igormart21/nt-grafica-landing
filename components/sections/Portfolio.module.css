@@ -107,3 +107,43 @@
     color: #fff;
     font-size: 2rem;
 }
+
+@media (max-width: 768px) {
+    .portfolio {
+        padding: 4rem 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .filters {
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .filterBtn {
+        padding: 6px 16px;
+        font-size: 0.85rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+    }
+
+    .overlay {
+        opacity: 0.1;
+        /* Show slightly on mobile since there is no hover */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        aspect-ratio: 16/9;
+    }
+}

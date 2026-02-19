@@ -188,11 +188,43 @@
 }
 
 @media (max-width: 900px) {
+    .contact {
+        padding: 4rem 0;
+    }
+
     .container {
         grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .infoSide {
+        text-align: center;
+    }
+
+    .infoItem {
+        justify-content: center;
+        text-align: left;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .form {
-        padding: 2rem;
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ctaContainer h2 {
+        font-size: 1.5rem;
+    }
+
+    .infoSide h3 {
+        font-size: 1.75rem;
+    }
+
+    .form h3 {
+        font-size: 1.25rem;
+        text-align: center;
     }
 }
