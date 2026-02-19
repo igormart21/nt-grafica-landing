@@ -26,7 +26,7 @@ export default function Testimonials() {
                     {reviews.map((review, index) => (
                         <div key={index} className={styles.card}>
                             <div className={styles.quoteIcon}><i className="bi bi-quote"></i></div>
-                            <p className={styles.text}>"{review.text}"</p>
+                            <p className={styles.text}>&quot;{review.text}&quot;</p>
                             <div className={styles.author}>
                                 <strong>{review.name}</strong>
                                 <span>{review.company}</span>
