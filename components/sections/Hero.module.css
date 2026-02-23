@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    background: url('/images/hero-bg.jpg') no-repeat center center / cover;
+    background: url('/assets/001.png') no-repeat center center / cover;
     padding: 6rem 0 8rem;
     /* Increased bottom padding */
     overflow: hidden;
@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.83);
     z-index: 1;
 }
 
@@ -51,6 +51,11 @@
 .content {
     flex: 1;
     z-index: 2;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 2.5rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(4px);
 }
 
 .badge {
@@ -241,50 +246,59 @@
 
 @media (max-width: 900px) {
     .hero {
-        padding: 4rem 0 6rem;
+        padding: 4rem 0 5rem;
     }
 
     .headline {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .content {
+        padding: 2rem 1.5rem;
     }
 
     .container {
         flex-direction: column;
         text-align: center;
-        padding-top: 1rem;
+        padding-top: 0;
         gap: 2rem;
     }
 
     .badge {
         margin-left: auto;
         margin-right: auto;
+        font-size: 0.8rem;
     }
 
     .subtitle {
         margin-left: auto;
         margin-right: auto;
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     .ctaGroup {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        max-width: 320px;
+        max-width: 400px;
         margin-left: auto;
         margin-right: auto;
+        gap: 0.75rem;
     }
 
     .primaryBtn,
     .secondaryBtn {
         width: 100%;
         justify-content: center;
+        padding: 12px 20px;
     }
 
     .stats {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem 2rem;
+        gap: 1rem 1.5rem;
     }
 
     .visual {
@@ -293,15 +307,23 @@
 }
 
 @media (max-width: 480px) {
-    .headline {
-        font-size: 2rem;
+    .hero {
+        padding: 3rem 0 4rem;
     }
 
-    .hero {
-        padding: 3rem 0 5rem;
+    .headline {
+        font-size: 1.85rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
     }
 
     .statItem {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .content {
+        padding: 1.5rem 1rem;
     }
 }

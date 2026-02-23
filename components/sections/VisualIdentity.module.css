@@ -118,21 +118,21 @@
 
 @media (max-width: 768px) {
     .section {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 1.85rem;
     }
 
     .description {
-        font-size: 1rem;
-        margin-bottom: 2.5rem;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
     }
 
     .grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.25rem;
     }
 
     .card {
@@ -141,6 +141,7 @@
 
     .ctaButton {
         width: 100%;
+        max-width: 320px;
         justify-content: center;
         font-size: 1rem;
     }

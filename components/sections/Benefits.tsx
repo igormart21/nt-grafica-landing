@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './Benefits.module.css';
 
 export default function Benefits() {
@@ -5,9 +6,14 @@ export default function Benefits() {
         <section className={styles.benefits}>
             <div className={styles.container}>
                 <div className={styles.visual}>
-                    {/* Placeholder for Benefits Image */}
-                    <div className={styles.imagePlaceholder}>
-                        <i className="bi bi-shield-check"></i>
+                    <div className={styles.imageWrapper}>
+                        <Image
+                            src="/assets/portifolio01/47.jpeg"
+                            alt="Qualidade, Agilidade e Confiança NT Gráfica"
+                            width={600}
+                            height={500}
+                            className={styles.image}
+                        />
                     </div>
                 </div>
                 <div className={styles.content}>

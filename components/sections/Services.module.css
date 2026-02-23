@@ -89,29 +89,35 @@
 
 @media (max-width: 768px) {
     .services {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 1.85rem;
     }
 
     .grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.25rem;
     }
 
     .card {
         padding: 1.5rem;
     }
+
+    .iconWrapper {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
     .title {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }

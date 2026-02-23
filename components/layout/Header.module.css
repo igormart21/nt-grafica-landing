@@ -113,31 +113,27 @@
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: 280px;
+        max-width: 85%;
         height: 100vh;
         background-color: #ffffff;
         flex-direction: column;
-        padding: 80px 2rem 2rem;
-        transition: right 0.3s ease-in-out;
+        padding: 80px 1.5rem 2rem;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
         z-index: 1000;
         display: flex;
-        /* Override display: none from previous version if it was there */
-    }
-
-    .navOpen {
-        right: 0;
     }
 
     .navList {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.25rem;
         margin-bottom: 2rem;
     }
 
     .navList a {
-        font-size: 1.25rem;
-        display: block;
+        padding: 0.5rem 0;
+        font-size: 1.125rem;
     }
 
     .mobileCta {

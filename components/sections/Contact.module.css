@@ -189,12 +189,12 @@
 
 @media (max-width: 900px) {
     .contact {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
 
     .container {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2.5rem;
     }
 
     .infoSide {
@@ -202,15 +202,19 @@
     }
 
     .infoItem {
-        justify-content: center;
+        justify-content: flex-start;
         text-align: left;
-        max-width: 300px;
+        max-width: 320px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .form {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .finalCta {
+        padding: 3rem 1rem;
     }
 }
 
@@ -220,7 +224,7 @@
     }
 
     .infoSide h3 {
-        font-size: 1.75rem;
+        font-size: 1.65rem;
     }
 
     .form h3 {

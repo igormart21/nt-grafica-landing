@@ -79,3 +79,23 @@
     color: #666;
     line-height: 1.6;
 }
+@media (max-width: 768px) {
+    .faq {
+        padding: 3.5rem 0;
+    }
+
+    .title {
+        font-size: 1.85rem;
+        margin-bottom: 2rem;
+    }
+
+    .question {
+        padding: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .answerContent {
+        padding: 0 1.25rem 1.25rem;
+        font-size: 0.9rem;
+    }
+}
