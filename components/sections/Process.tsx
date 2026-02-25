@@ -2,18 +2,18 @@ import styles from './Process.module.css';
 
 export default function Process() {
     const steps = [
-        { num: 1, title: 'Contato', desc: 'Solicite seu orçamento via WhatsApp e envie suas ideias.' },
-        { num: 2, title: 'Aprovação', desc: 'Validamos medidas e artes para garantir a qualidade.' },
-        { num: 3, title: 'Produção', desc: 'Fabricação com materiais premium e tecnologia de ponta.' },
-        { num: 4, title: 'Entrega', desc: 'Instalação profissional ou retirada em nossa sede.' }
+        { num: 1, title: 'Contato e Apresentação', desc: 'Traga sua necessidade e ideias pessoalmente ou via Whatsapp.' },
+        { num: 2, title: 'Criação e Aprovação', desc: 'Vamos desenvolver seu projeto e elevar seus padrões, após apresentação e aprovação da(o) contratante, seu material será confeccionado.' },
+        { num: 3, title: 'Produção', desc: 'Com base em sua necessidade seu projeto sairá do papel com os melhores materiais e equipamentos do mercado.' },
+        { num: 4, title: 'Entrega e Aplicação', desc: 'Realizaremos a entrega do seu material e a instalação com profissionais capacitados. Ou você retira em nossa base.' }
     ];
 
     return (
         <section id="como-funciona" className={styles.process}>
             <div className={styles.container}>
                 <div className={styles.header}>
-                    <h2 className={styles.title}>Como Funciona</h2>
-                    <p className={styles.subtitle}>Do pedido à entrega, um processo transparente e ágil.</p>
+                    <h2 className={styles.title}>Com a NT é Simples!</h2>
+                    <p className={styles.subtitle}>Escolha quem te prioriza.</p>
                 </div>
 
                 <div className={styles.timeline}>

@@ -7,7 +7,7 @@ export default function Hero() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div className={styles.badge}>
-                        🎨 Especialistas em Comunicação Visual
+                        🎨 Especialistas em Comunicação Visual 360°
                     </div>
                     <h1 className={styles.headline}>
                         Sua Marca em Evidência com <span className={styles.highlight}>Qualidade Premium</span>

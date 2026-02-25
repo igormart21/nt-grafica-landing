@@ -47,12 +47,12 @@ export default function Header() {
                         className={styles.mobileCta}
                         onClick={closeMenu}
                     >
-                        Orçar no WhatsApp
+                        <i className="bi bi-whatsapp"></i> Orçar no WhatsApp
                     </Link>
                 </nav>
 
                 <Link href="https://wa.me/5527999999999" target="_blank" className={styles.ctaButton}>
-                    Orçar no WhatsApp
+                    <i className="bi bi-whatsapp"></i> Orçar no WhatsApp
                 </Link>
             </div>
         </header>

@@ -5,7 +5,7 @@ export default function Services() {
         {
             title: "Comunicação Visual",
             icon: "bi-megaphone",
-            desc: "Placas em lona, Acm, Adesivo em qualidade Latéx (melhor durabilidade do mercado), fachada, totens, luminosos, PVC adesivado, PVC expandido."
+            desc: "Placas em lona, Acm, Adesivo em qualidade Latéx (melhor durabilidade do mercado), fachada, totens, luminosos, PVC adesivado, PVC expandido, perfurados e muito mais..."
         },
         {
             title: "Gráfica",
@@ -24,7 +24,7 @@ export default function Services() {
             <div className={styles.container}>
                 <div className={styles.header}>
                     <h2 className={styles.title}>O que fazemos</h2>
-                    <p className={styles.subtitle}>Soluções completas para destacar sua marca no mundo físico.</p>
+                    <p className={styles.subtitle}>Soluções completas em comunicação 360°, que elevam sua marca e negócio!</p>
                 </div>
 
                 <div className={styles.grid}>

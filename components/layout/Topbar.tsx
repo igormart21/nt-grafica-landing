@@ -6,11 +6,20 @@ export default function Topbar() {
         <div className={styles.topbar}>
             <div className={styles.container}>
                 <p className={styles.text}>
-                    ⚡ Entrega rápida • Atendimento via WhatsApp • Orçamento ágil
+                    <span style={{ color: 'var(--color-primary-yellow)' }}>•</span> ESTRATÉGIA{' '}
+                    <span style={{ color: 'var(--color-primary-yellow)' }}>•</span> CRIATIVIDADE{' '}
+                    <span style={{ color: 'var(--color-primary-yellow)' }}>•</span> RESULTADO
                 </p>
-                <Link href="https://wa.me/5527999999999" target="_blank" className={styles.button}>
-                    Falar agora
-                </Link>
+                <div className={styles.actionGroup}>
+                    <a
+                        href="https://www.instagram.com/nt.comunicacao_?igsh=NW93b2VsZ3hwdnZo"
+                        target="_blank"
+                        className={styles.instagramLink}
+                        rel="noopener noreferrer"
+                    >
+                        <i className="bi bi-instagram"></i> Siga nosso instagram
+                    </a>
+                </div>
             </div>
         </div>
     );

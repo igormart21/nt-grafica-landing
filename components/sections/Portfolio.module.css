@@ -104,6 +104,44 @@
     font-size: 2rem;
 }
 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modalContent {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    max-width: 1200px;
+    cursor: default;
+}
+
+.modalImage {
+    object-fit: contain;
+}
+
+.closeModal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 10000;
+}
+
 @media (max-width: 768px) {
     .portfolio {
         padding: 3.5rem 0;

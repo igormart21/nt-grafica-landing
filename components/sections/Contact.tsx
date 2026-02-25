@@ -33,9 +33,6 @@ export default function Contact() {
                         <Link href="https://wa.me/5527999999999" target="_blank" className={styles.whatsappBtn}>
                             <i className="bi bi-whatsapp"></i> Falar no WhatsApp
                         </Link>
-                        <Link href="#contato" className={styles.formBtn}>
-                            ou preencha o formulário abaixo
-                        </Link>
                     </div>
                 </div>
             </section>
@@ -67,7 +64,7 @@ export default function Contact() {
                             <i className="bi bi-geo-alt"></i>
                             <div>
                                 <strong>Endereço</strong>
-                                <p>Rua da Empresa, 123 - Bairro, Cidade - ES</p>
+                                <p>Av. Brasil, 8 - Novo Horizonte, Serra - ES, 29163-165</p>
                             </div>
                         </div>
 
@@ -80,7 +77,16 @@ export default function Contact() {
                         </div>
 
                         <div className={styles.mapPlaceholder}>
-                            <span>Mapa (Google Maps Embed)</span>
+                            <iframe
+                                src="https://maps.google.com/maps?q=Av.+Brasil,+8+-+Novo+Horizonte,+Serra+-+ES,+29163-165&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0, borderRadius: '8px' }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Google Maps - Localização da Empresa"
+                            ></iframe>
                         </div>
                     </div>
 

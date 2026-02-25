@@ -9,11 +9,12 @@ export default function Footer() {
                 <div className={styles.column}>
                     <div className={styles.logoContainer}>
                         <Image
-                            src="/images/logo.png"
+                            src="/images/logo-footer.png"
                             alt="NT Gráfica Logo"
-                            width={180}
-                            height={60}
+                            width={75}
+                            height={75}
                             className={styles.footerLogo}
+                            style={{ objectFit: 'contain' }}
                         />
                     </div>
                     <p className={styles.description}>
