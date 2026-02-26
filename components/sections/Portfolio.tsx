@@ -62,6 +62,8 @@ export default function Portfolio() {
         { id: 32, category: 'endomarketing', title: 'Endomarketing 02', src: '/assets/portifolio01/40.jpeg' },
         { id: 33, category: 'endomarketing', title: 'Endomarketing 03', src: '/assets/portifolio01/41.jpeg' },
         { id: 34, category: 'endomarketing', title: 'Endomarketing 04', src: '/assets/portifolio01/42.jpeg' },
+        // Totens
+        { id: 40, category: 'totens', title: 'Toten 01', src: '/assets/portifolio01/toten_01.jpg' },
     ];
 
     const filteredItems = filter === 'todos'
